@@ -1,0 +1,388 @@
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top-catalog{
+    height: 400px;
+    background-image: url(img/imgcatalog/topbackcatalog.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__heading{
+        color: $colorText;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-top: 128px;
+    }
+}
+
+.header{
+    height: 77px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+    &__input{
+        height: 41px;
+        width: 288px;
+        box-sizing: border-box;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        background-color: transparent;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        color: $colorText;
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+
+    &__input::placeholder{
+        color: $colorText;
+    }
+
+    &__nav{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__link{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        color: $colorText;
+        text-decoration: none;
+    }
+}
+
+
+/* Каталог */
+
+.catalog{
+    &__select{
+        position: relative;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 61px;
+        padding-bottom: 36px;
+    }
+
+    &__nav{
+        display: flex;
+        gap: 10px;
+    }
+
+    &__link{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration: none; 
+    }
+
+    &__link:hover{
+        text-decoration:underline
+    }
+
+    &__span{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__select1{
+        width: 182px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-left: 23px;
+        padding-right: 23px;
+        appearance: none;
+        background-image: url(img/imgcatalog/catalogselect.svg);
+        background-repeat: no-repeat;
+        background-position: 140px 15px; 
+        cursor: pointer;
+    }
+
+    &__select2{
+        width: 227px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-left: 23px;
+        padding-right: 23px;
+        appearance: none;
+        background-image: url(img/imgcatalog/catalogselect.svg);
+        background-repeat: no-repeat;
+        background-position: 180px 15px; 
+        cursor: pointer;
+    }
+
+    &__option{
+        position: relative;
+        position:relative
+    }
+}
+
+.product-window{
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 32px;
+    }
+
+    &__menu{
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+
+    &__link{
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: underline;
+    }
+
+    &__link:hover{
+        color: rgb(136, 136, 136);
+        text-decoration: none;
+    }
+}
+
+.product{
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+
+    &__heding{
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 72px;
+        margin-bottom: 32px;
+    }
+
+    &__img{
+        width: 100%;
+        background: rgb(196, 196, 196);
+    }
+
+    &__head{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    &__description{
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 13px;
+    }
+
+    &__price{
+        color: rgb(5, 5, 5);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+
+/* Подвал */
+
+.footer{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.bottom{
+    background: rgb(247, 246, 246);
+
+    &__logo{
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__menu{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__contacts{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__news{
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+
+.menu{
+    &__link{
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        list-style: none;  
+    }
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__link{
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    &__social{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__input{
+        width: 260px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 16px;
+        color: rgb(196, 196, 196);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-left: 17px;
+        padding-right: 17px;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    &__input::placeholder{
+        color: rgb(196, 196, 196);
+    }
+
+    &__button{
+        width: 260px;
+        height: 40px;
+        border-radius: 16px;
+        background: rgba(222, 215, 215, 0.41);
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-left: 85px;
+        padding-right: 85px;
+        border: none
+    }
+}
+
+.header__link:hover, 
+.menu__link:hover, 
+.contacts__link:hover,
+.section__link:hover,
+.menu__link:hover{
+    text-decoration: underline;
+}
+
+

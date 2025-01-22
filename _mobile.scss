@@ -1,0 +1,248 @@
+@media(max-width: 767px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header{
+        padding-top: 32px;
+        &__logo{
+            width: 99px;
+        }
+
+        &__input{
+            display: none;
+        }
+
+        &__nav{
+            display: none;
+        }
+
+        &__menu-mobile{
+            display: block;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__heading{
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+
+        &__paragraph{
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        &__link{
+            font-size: 14px;
+        }
+    }
+
+    .for-box{
+        &__heading{
+            font-size: 24px;
+            line-height: 29px;
+            padding-top: 32px;
+        }
+    }
+
+    .for{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        &__item{
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+            &_big{
+                height: 244px;
+            }
+        }
+    }
+
+    .section2{
+        &__specialheading{
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 32px;
+        }
+
+        &__specialcontent{
+            row-gap: 32px;
+        }
+    }
+
+    .specialproduct{
+        &__head{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__sale, &__price{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .product{
+        &__head{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__price{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .show{
+        &__heading{
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 36px;
+        }
+    }
+
+    .bottom{
+        &__contacts{
+            padding-right: 0;
+        }
+    }
+
+    .footer{
+        justify-content: center;
+    }
+
+    .news{
+        padding-top: 70px;
+    }
+
+    // Каталог
+
+    .top-catalog{
+        &__heading{
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+    }
+
+    .catalog{
+        &__menu{
+            padding-top: 32px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__select{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__nav{
+            padding-bottom: 14px;
+        }
+    }
+
+    .filter-form{
+        right: 60px;
+        width: 190px;
+        height: 830px;
+        &__content{
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+
+        &__button{
+            margin-top: 0;
+        }
+    }
+
+    // Корзина
+
+    .top-basket{
+        &__heding{
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+    }
+
+    .basket{
+        &__header{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__description{
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__price{
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__button{
+            width: 166px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__name-box{
+            display: none;
+        }
+
+        &__img{
+            display: none;
+        }
+
+        &__form{
+            padding-left: 27px;
+            padding-right: 27px;
+        }
+
+        &__form-box{
+            width: 343px;
+            display: flex;
+            align-content: center;
+            margin-top: 48px;
+        }
+    }
+
+    .basketspecial{
+        &__specialheding{
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 48px;
+        }
+
+        &__head{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__sale, &__price{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .product:hover, 
+    .specialproduct:hover, 
+    .basketspecial__product:hover{
+        transform: scale(1);
+    }
+}

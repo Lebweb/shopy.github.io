@@ -1,0 +1,410 @@
+.filter-form{
+    position: absolute;
+    right: 230px;
+    top: 56px;
+    z-index: 1;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    background: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 65;
+    padding: 40px 48px 40px 48px;
+
+    &__content{
+        position: static;
+        width: 445.5px;
+        height: 468px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 65px;
+    }
+
+    &__fieldset{
+        border: none;
+    }
+
+    &__legend1{
+        margin-bottom: 16px;
+        color: rgb(5, 5, 5);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__legend2{
+        padding-bottom: 14px;
+        color: rgb(5, 5, 5);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__content_left{
+        position: static;
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0px;
+    }
+
+    &__content_right{
+        position: static;
+        width: 190px;
+        height: 330px;
+    }
+}
+
+.filter-flex{
+    display: flex;
+}
+// Срок
+
+.radio-box{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.radio{
+    &__input{
+        display: none;
+        &:checked + .radio__label::before{
+            border: 1px solid rgb(0, 0, 0);
+            background-image: url(img/formimg/checked.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__label{
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-left: 30px;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 15px;
+            height: 15px;
+            box-sizing: border-box;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 60px;
+            position: absolute;
+            left: 0;
+            background-color: #fff;
+        }
+    }
+}
+
+
+// Цена
+
+.range-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.range{
+    position: static;
+    width: 190px;
+    height: 0px;
+    border: 1px solid #000;
+ }
+
+.range__input{
+    position: absolute;
+    width: 190px;
+    height: 10px;
+    &::-webkit-slider-runnable-track{
+        display: inline-block;
+        position: static;
+        width: 190px;
+        height: 8px;
+        margin: 14px 0px;
+        color: rgb(0, 0, 0);
+    }
+    &:nth-child(2)::-webkit-slider-runnable-track{
+        background: none;
+    }
+
+    &::-webkit-slider-thumb:active {
+        cursor: grabbing;
+    }
+}
+
+
+.range__input,
+.range__input::-webkit-slider-runnable-track,
+.range__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: none;
+}
+
+.range__input::-webkit-slider-thumb {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    margin-top: -5px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.range-bar__span{
+    padding-left: 14px;
+}
+
+.range-bar__label{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+// Цвет
+
+.filter-form__legend3{
+    padding-bottom: 14px;
+    color: rgb(5, 5, 5);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.color-options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14;
+    max-width: 190px;
+}
+
+.color-options__top, .color-options__bottom{
+    display: flex;
+    gap: 14;
+}
+
+.color-options__checkbox{
+    width: 15;
+    height: 15; 
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__input, &__input_black{
+        display: none;
+    }
+
+    &__input:checked + .checkbox__label::before, &__input:checked + .checkbox__label_type::before{
+        background-image: url(img/formimg/checked.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-color: #000;
+    }
+
+    &__label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        font-size: 14px;
+        padding: 14px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__label::before, &__label_type::before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        box-sizing: border-box;
+        border: 1px solid rgb(136, 136, 136);
+        position: absolute;
+        left: 0;
+        background: rgb(255, 255, 255);
+    }
+}
+
+
+.checkbox__label_white::before{
+    border: 1px solid rgb(136, 136, 136);
+    background: rgb(255, 255, 255);
+}
+
+.checkbox__label_black::before{
+    border: 1px solid rgb(0, 0, 0);
+    background: #000;
+}
+
+.checkbox__label_grey::before{
+    border: 1px solid rgb(115, 115, 115);
+    background: rgb(115, 115, 115);
+}
+
+.checkbox__label_red::before{
+    border: 1px solid rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
+}
+
+.checkbox__label_orange::before{
+    border: 1px solid rgb(255, 122, 65);
+    background: rgb(255, 122, 65);
+}
+
+.checkbox__label_yellow::before{
+    border: 1px solid rgb(242, 203, 1);
+    background: rgb(242, 203, 1);
+}
+
+.checkbox__label_green::before{
+    border: 1px solid rgb(0, 191, 42);
+    background: rgb(0, 191, 42);
+}
+
+.checkbox__label_lightgreen::before{
+    border: 1px solid rgb(28, 204, 151);
+    background: rgb(28, 204, 151);
+}
+
+.checkbox__label_azure::before{
+    border: 1px solid rgb(0, 159, 227);
+    background: rgb(0, 159, 227);
+}
+
+.checkbox__label_blue::before{
+    border: 1px solid rgb(0, 10, 248);
+    background: rgb(0, 10, 248);
+}
+
+.checkbox__label_violet::before{
+    border: 1px solid rgb(103, 16, 214);
+    background: rgb(103, 16, 214);
+}
+
+.checkbox__label_pink::before{
+    border: 1px solid rgb(157, 13, 181);
+    background: rgb(157, 13, 181);
+}
+
+.checkbox__label_lightpink::before{
+    border: 1px solid rgb(216, 154, 255);
+    background: rgb(216, 154, 255);
+}
+
+.checkbox__label_darkpink::before{
+    border: 1px solid rgb(255, 101, 166);
+    background: rgb(255, 101, 166);
+}
+
+.checkbox__input_black:checked + .checkbox__label::before{
+    background-image: url(img/formimg/vectorwhite.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #000;
+}
+
+// Тип команаты
+
+.filter-form__legend4{
+    color: rgb(5, 5, 5);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-bottom: 14px;
+}
+
+.room-type{
+    position: static;
+    width: 190px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    flex: none;
+}
+
+.checkbox__label_type{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    padding-left: 28px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.filter-form__button{
+    width: 190px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 10px 76px 10px 76px;
+    margin-top: 65px;
+
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 20px;
+    background: #fff;
+
+    transition: all 1s;
+}
+
+.filter-form__button:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
